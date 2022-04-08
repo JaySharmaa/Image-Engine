@@ -1,2 +1,3 @@
 # Image-Engine
-ALL IMAGES ARE FROM unsplash.com
+
+API used from unsplash.com
