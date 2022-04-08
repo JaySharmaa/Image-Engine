@@ -1,0 +1,140 @@
+* {
+    font-family: "Courier New", Courier, monospace;
+  }
+  body {
+    background-color: black;
+    color: white;
+  }
+  #head {
+    text-align: center;
+  }
+  h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  #search {
+    width: 50%;
+    outline: none;
+    height: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border: none;
+    font-size: 20px;
+    transition: box-shadow 0.5s;
+  }
+  #search:focus {
+    position: relative;
+    box-shadow: -2px -3px 40px 0px #5dead0;
+    transition: 0.5s;
+  }
+  #search-btn {
+    margin-top: 40px;
+    padding: 10px 25px;
+    background-color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  #search-btn:hover {
+    font-size: 20px;
+    transform: scale(1.2);
+    background-color: rgb(184, 184, 184);
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  #row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  #column,
+  #column1,
+  #column2 {
+    flex: 25%;
+    max-width: 31%;
+    padding: 0 4px;
+  }
+  .image {
+    display: inline-block;
+    margin: 0;
+    margin-top: 20px;
+  }
+  img {
+    margin-left: 0;
+    margin-top: 20px;
+    border: 2px solid white;
+    position: relative;
+    margin-top: 0;
+    vertical-align: middle;
+    display: inline-block;
+    transition: opacity 0.5s;
+  }
+  img:hover {
+    transition: 0.5s;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .download {
+    margin-top: 30px;
+    margin-left: -3%;
+    transition: 0.5s;
+    padding: 5px;
+    position: absolute;
+    color: rgb(0, 174, 255);
+  }
+  .novisible {
+    visibility: hidden;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .download:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    color: white;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  a {
+    color: white;
+  }
+  footer {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  footer p {
+    font-size: 20px;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px) {
+    #column,
+    #column1,
+    #column2 {
+      flex: 100%;
+      text-align: center;
+      max-width: 100%;
+    }
+    .download {
+      visibility: hidden;
+    }
+    .image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img {
+      margin: 0;
+      margin-top: 15px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+  }
